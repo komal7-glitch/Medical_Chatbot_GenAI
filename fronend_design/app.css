@@ -1,0 +1,126 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Background */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Wrapper Styling */
+.wrapper {
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Title */
+.title {
+    background-color: #00838f;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Chat Box */
+.box {
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+    background: #f7f7f7;
+}
+
+/* Message Item */
+.item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+/* Message Icon */
+.icon {
+    margin-right: 10px;
+    color: #00838f;
+    font-size: 20px;
+}
+
+/* Message Bubble */
+.msg p {
+    background-color: #e0f2f1;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 70%;
+    line-height: 1.4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Aligned Messages */
+.item.right {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.item.right .msg p {
+    background-color: #00838f;
+    color: white;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 15px;
+}
+
+/* Typing Area */
+.typing-area {
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+/* Input Field */
+.input-field {
+    display: flex;
+    gap: 10px;
+}
+
+.input-field input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field input:focus {
+    border-color: #00838f;
+}
+
+/* Send Button */
+.input-field button {
+    padding: 10px 20px;
+    background-color: #00838f;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.input-field button:hover {
+    background-color: #006064;
+}
